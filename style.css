@@ -74,3 +74,34 @@ Makes it white, bold, and slightly larger (24px) so it feels like a logo.*/
     margin: 0 auto;
 }
 
+.about{
+    padding: 40px 20px;
+    margin-top: 40px;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+    text-align: center;
+}
+
+.about h2{
+    font-size: 28px;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.about p{
+    font-size: 18px;
+    color: #444;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+.profile-pic{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
