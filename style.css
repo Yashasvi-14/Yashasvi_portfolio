@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6; /*gives breathing space between lines.*/
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;  /* gives space around the content*/
+}
+
+.navbar {
+    display: flex;  /*makes children (logo + links) align in a row*/
+    justify-content: space-between;  /*pushes logo left, links right.*/
+    align-items: center;   /* vertically centers them.*/
+    background-color: #1e1e1e;   /*makes the nav dark black.*/
+    padding: 20px;   /* adds spacing inside.*/
+    border-radius: 10px;   /*gives rounded corners.*/
+}
+
+.logo{
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}/*Targets your <h1 class="logo">Yashasvi</h1>
+Makes it white, bold, and slightly larger (24px) so it feels like a logo.*/
+
+.nav-links{/* targets the <ul> with the navigation links.*/
+    list-style: none; /*removes the default bullets.*/
+    display: flex; /*puts the list items in a row.*/
+    gap: 20px; /*adds spacing between each link.*/
+}
+
+.nav-links li a {/*Targets the <a> tags inside each <li>.*/
+    text-decoration: none;/*removes the underlines.*/
+    color: #fff;/*makes them white.*/
+    font-weight: 500;/*makes them slightly bolder.*/
+    transition: color 0.3s ease; /*gives a smooth hover effect.*/
+}
+
+.nav-links li a:hover{/*On hover, the links turn to orange*/
+    color: #ff9800;
+}
+/* the earlier transition, the color change is smooth.*/
+
+.hero{
+    margin-top: 60px;/*Adds space above the section so it’s not stuck to the navbar*/
+    text-align: center;/*Centers all the text in the hero section (h2, h3, p)*/
+    padding: 40px 20px;/*Adds 40px space above/below, 20px left/right inside the section.*/
+    background-color: #ffffff;/*Gives a white background to highlight the hero section.*/
+    border-radius: 12px;/*Makes the corners smooth and rounded.*/
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);/*Adds a very light shadow under the hero box — gives it a lifted/card loo*/
+}
+
+.hero h2{
+    font-size: 32px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.hero h3{
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.hero p{
+    font-size: 18px;
+    color: #444;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
