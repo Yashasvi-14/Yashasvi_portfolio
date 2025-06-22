@@ -119,10 +119,11 @@ Makes it white, bold, and slightly larger (24px) so it feels like a logo.*/
 }
 
 .project-list{
-    display: flex;
-    flex-direction: column;/*stacks project cards vertically*/
+    display: flex;/*activated flexbox layout*/
+    flex-wrap: wrap;/*Allows cards to wrap into new lines*/
+    justify-content: center;
     gap: 20px;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -132,6 +133,11 @@ Makes it white, bold, and slightly larger (24px) so it feels like a logo.*/
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
     text-align: left;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+.project-card:hover{
+    transform: translateY(-5px);
 }
 
 .project-card h3{
