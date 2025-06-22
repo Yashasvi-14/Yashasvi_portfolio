@@ -182,3 +182,29 @@ Makes it white, bold, and slightly larger (24px) so it feels like a logo.*/
 .contact a:hover{
     text-decoration: underline;
 }
+
+.resume{
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+.resume h2{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.resume p{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.resume .btn{
+    padding: 10px 20px;
+    background-color: #0077cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.resume .btn:hover{
+    background-color: #005fa3;
+}
