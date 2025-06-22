@@ -214,3 +214,7 @@ Makes it white, bold, and slightly larger (24px) so it feels like a logo.*/
 .resume .btn:hover{
     background-color: #005fa3;
 }
+
+html{
+    scroll-behavior: smooth;
+}
