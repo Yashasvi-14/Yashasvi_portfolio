@@ -218,3 +218,28 @@ Makes it white, bold, and slightly larger (24px) so it feels like a logo.*/
 html{
     scroll-behavior: smooth;
 }
+
+@media  screen and (max-width: 768px) {
+    /* CSS rules here apply only when screen width ≤ 768px */
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .hero h2{
+        font-size: 22px;
+    }
+    .project-list{
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-card{
+        width: 90%;
+    }
+    .resume .btn{
+        width: 80%;
+        padding: 12px;
+        font-size: 16px;
+    }
+    
+}
