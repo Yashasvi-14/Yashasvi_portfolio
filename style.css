@@ -47,31 +47,52 @@ Makes it white, bold, and slightly larger (24px) so it feels like a logo.*/
 /* the earlier transition, the color change is smooth.*/
 
 .hero{
-    margin-top: 60px;/*Adds space above the section so it’s not stuck to the navbar*/
-    text-align: center;/*Centers all the text in the hero section (h2, h3, p)*/
-    padding: 40px 20px;/*Adds 40px space above/below, 20px left/right inside the section.*/
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 10%;/*Adds 40px space above/below, 10% left/right inside the section.*/
     background-color: #ffffff;/*Gives a white background to highlight the hero section.*/
     border-radius: 12px;/*Makes the corners smooth and rounded.*/
     box-shadow: 0 4px 20px rgba(0,0,0,0.05);/*Adds a very light shadow under the hero box — gives it a lifted/card loo*/
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 60px;
+}
+.hero-text{
+    flex: 1;
+    min-width: 280px;
 }
 
-.hero h2{
+.hero-text h2{
     font-size: 32px;
     color: #222;
     margin-bottom: 10px;
 }
 
-.hero h3{
+.hero-text h3{
     font-size: 20px;
     color: #666;
     margin-bottom: 15px;
 }
 
-.hero p{
+.hero-text p{
     font-size: 18px;
     color: #444;
     max-width: 600px;
-    margin: 0 auto;
+}
+
+.hero-image{
+    flex: 1;
+    text-align: center;
+    min-width: 200px;
+}
+
+.hero-image img{
+    max-width: 250px;
+    border-radius: 50%;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    max-width: 100%;
+    height: auto;
 }
 
 .about{
