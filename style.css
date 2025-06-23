@@ -96,6 +96,28 @@ Makes it white, bold, and slightly larger (24px) so it feels like a logo.*/
     max-width: 100%;
     height: auto;
 }
+.typewriter{
+    overflow: hidden;/*Hides text that’s outside the current visible width. This is what creates the "typing" effect*/
+    border-right: 2px solid #333;/*Creates a blinking cursor effect on the right edge.*/
+    white-space: nowrap;/*Prevents text from wrapping onto a new line (must stay in one line).*/
+    margin: 0 auto;
+    letter-spacing: 2px;
+    animation: typing 3s steps(30,end) forwards, blink 0.75s step-end infinite;
+    /*Plays two animations: typing and blinking cursor.*/
+    width: 0;/*Starts the width at zero (i.e., no text shown at first). It increases during the animation.*/
+}
+@keyframes typing{
+    from{width: 0;}
+    to{width: 100%;}
+}/*This gradually increases the width of the .typewriter text from 0 to full width — so characters appear one-by-one.
+
+steps(30, end) → divides it into 30 steps (you can tweak for speed)
+
+3s → total time for typing*/
+
+@keyframes blink{
+    50% {border-color: transparent;}
+}/*This blinks the border-right cursor (on and off) every 0.75s — simulating typing behavior.*/
 
 .about{
     max-width: 900px;
