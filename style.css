@@ -359,10 +359,13 @@ html{
     color: #f5f5f5;
     box-shadow: none;
 }
-.dark-mode h1,
-.dark-mode h2,
-.dark-mode h3{
+.dark-mode h1{
     color: #ffffff;
+}
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode p{
+    color: #eee
 }
 button #darkModeToggle{
     position: fixed;
@@ -375,7 +378,8 @@ button #darkModeToggle{
     border-radius: 5px;
     cursor: pointer;
 }
-.dark-mode .btn{
+.dark-mode .btn,
+.dark-mode #darkModeToggle{
     background-color: #333;
     color: #fff;
     border: 1px solid #555; 
@@ -385,4 +389,8 @@ button #darkModeToggle{
 }
 body{
     transition: background-color 0.3s ease, color 0.3s ease;
+}
+.hero, .contact-section, footer{
+    transition: background-color 0.3s ease, color 0.3s ease;
+
 }
