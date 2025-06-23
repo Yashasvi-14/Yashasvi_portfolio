@@ -47,7 +47,9 @@ Makes it white, bold, and slightly larger (24px) so it feels like a logo.*/
 /* the earlier transition, the color change is smooth.*/
 
 .hero{
+    margin-top: 60px;
     display:flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: 40px 10%;/*Adds 40px space above/below, 10% left/right inside the section.*/
@@ -96,11 +98,12 @@ Makes it white, bold, and slightly larger (24px) so it feels like a logo.*/
 }
 
 .about{
+    max-width: 900px;
+    margin: 60px auto;
     padding: 40px 20px;
-    margin-top: 40px;
-    background-color: #f0f0f0;
+    background-color:  #ffffff;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.04);
     text-align: center;
 }
 
@@ -112,10 +115,18 @@ Makes it white, bold, and slightly larger (24px) so it feels like a logo.*/
 
 .about p{
     font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+.about-values{
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 16px;
     color: #444;
-    max-width: 700px;
-    margin: 0 auto;
-    line-height: 1.7;
 }
 
 .profile-pic{
@@ -127,15 +138,15 @@ Makes it white, bold, and slightly larger (24px) so it feels like a logo.*/
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.projects{
-    padding: 50px 20px;
+.projects-section{
+    padding: 60px 20px;
     background-color: #f9f9f9;
     text-align: center;
 }
 
-.projects h2{
-    font-size: 30px;
-    margin-bottom: 30px;
+.projects-section h2{
+    font-size: 28px;
+    margin-bottom: 40px;
     color: #222;
 }
 
@@ -144,12 +155,10 @@ Makes it white, bold, and slightly larger (24px) so it feels like a logo.*/
     flex-wrap: wrap;/*Allows cards to wrap into new lines*/
     justify-content: center;
     gap: 20px;
-    max-width: 1000px;
-    margin: 0 auto;
 }
 
 .project-card{
-    background-color: white;
+    background-color: #fff;
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
@@ -164,9 +173,11 @@ Makes it white, bold, and slightly larger (24px) so it feels like a logo.*/
 
 .project-card h3{
     margin-bottom: 10px;
+    font-size: 20px;
     color: #333;
 }
 .project-card p{
+    font-size: 16px;
     margin-bottom: 10px;
     color: #555;
 }
@@ -179,62 +190,77 @@ Makes it white, bold, and slightly larger (24px) so it feels like a logo.*/
     text-decoration: underline;
 }
 
-.contact{
-    padding: 50px 20px;
-    background-color: #e8f0fe;
+.contact-section{
+    margin: 60px auto;
+    padding: 40px 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    max-width: 700px;
     text-align: center;
 }
 
-.contact h2{
+.contact-section h2{
     font-size: 28px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    color: #222;
 }
 
-.contact p{
-    font-size: 16px;
+.contact-section p{
+    font-size: 18px;
     margin-bottom: 20px;
+    color: #444;
 }
-.contact ul{
+.contact-list{
     list-style: none;
     padding: 0;
-}
-.contact li{
-    margin: 10px 0;
     font-size: 16px;
 }
-.contact a{
-    color: #0077cc;
+.contact-list li{
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+}
+.contact-section a{
+    color: #007bff;
     text-decoration: none;
 }
 
-.contact a:hover{
+.contact-section a:hover{
     text-decoration: underline;
 }
 
-.resume{
-    padding: 50px 20px;
+.resume-section{
+    margin: 60px auto;
+    padding: 40px 20px;
     background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    max-width: 700px;
     text-align: center;
 }
-.resume h2{
+.resume-section h2{
     font-size: 28px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    color: #222;
 }
-.resume p{
-    font-size: 16px;
+.resume-section p{
+    font-size: 18px;
     margin-bottom: 20px;
+    color: #444;
 }
-.resume .btn{
-    padding: 10px 20px;
-    background-color: #0077cc;
+.resume-section .btn{
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #007bff;
     color: white;
     text-decoration: none;
-    border-radius: 6px;
+    border-radius: 8px;
     font-weight: bold;
     transition: background-color 0.3s ease;
 }
-.resume .btn:hover{
-    background-color: #005fa3;
+.resume-section .btn:hover{
+    background-color: #0056b3;
 }
 
 html{
